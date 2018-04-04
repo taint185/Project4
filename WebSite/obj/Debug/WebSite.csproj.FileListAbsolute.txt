@@ -1,0 +1,155 @@
+F:\Working\WEB\WebSite\WebSite\bin\ApplicationInsights.config
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\csc.exe
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\csc.exe.config
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\csc.rsp
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\csi.exe
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\csi.rsp
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\System.AppContext.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\System.Collections.Immutable.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\vbc.exe
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\vbc.exe.config
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\vbc.rsp
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe
+F:\Working\WEB\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe.config
+F:\Working\WEB\WebSite\WebSite\bin\WebSite.dll.config
+F:\Working\WEB\WebSite\WebSite\bin\WebSite.dll
+F:\Working\WEB\WebSite\WebSite\bin\WebSite.pdb
+F:\Working\WEB\WebSite\WebSite\bin\Antlr3.Runtime.dll
+F:\Working\WEB\WebSite\WebSite\bin\EntityFramework.dll
+F:\Working\WEB\WebSite\WebSite\bin\EntityFramework.SqlServer.dll
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.dll
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.Web.dll
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.dll
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.ApplicationInsights.dll
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.Web.Infrastructure.dll
+F:\Working\WEB\WebSite\WebSite\bin\Newtonsoft.Json.dll
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.Helpers.dll
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.Mvc.dll
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.Optimization.dll
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.Razor.dll
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.WebPages.Deployment.dll
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.WebPages.dll
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.WebPages.Razor.dll
+F:\Working\WEB\WebSite\WebSite\bin\WebGrease.dll
+F:\Working\WEB\WebSite\WebSite\bin\EntityFramework.xml
+F:\Working\WEB\WebSite\WebSite\bin\EntityFramework.SqlServer.xml
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.Helpers.xml
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.Mvc.xml
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.Optimization.xml
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.Razor.xml
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.WebPages.xml
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.WebPages.Deployment.xml
+F:\Working\WEB\WebSite\WebSite\bin\System.Web.WebPages.Razor.xml
+F:\Working\WEB\WebSite\WebSite\bin\Antlr3.Runtime.pdb
+F:\Working\WEB\WebSite\WebSite\bin\Newtonsoft.Json.xml
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.ApplicationInsights.xml
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.xml
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.xml
+F:\Working\WEB\WebSite\WebSite\bin\Microsoft.AI.Web.xml
+F:\Working\WEB\WebSite\WebSite\obj\Debug\WebSite.dll
+F:\Working\WEB\WebSite\WebSite\obj\Debug\WebSite.pdb
+F:\Working\WEB\WebSite\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference.cache
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\ApplicationInsights.config
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\csc.exe
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\csc.exe.config
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\csc.rsp
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\csi.exe
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\csi.rsp
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\System.AppContext.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\vbc.exe
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\vbc.exe.config
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\vbc.rsp
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\WebSite.dll.config
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\WebSite.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\WebSite.pdb
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Antlr3.Runtime.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\EntityFramework.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\EntityFramework.SqlServer.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.Web.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Newtonsoft.Json.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.Helpers.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.Mvc.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.Optimization.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.Razor.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.WebPages.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\WebGrease.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\EntityFramework.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\EntityFramework.SqlServer.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.Helpers.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.Mvc.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.Optimization.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.Razor.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.WebPages.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Antlr3.Runtime.pdb
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Newtonsoft.Json.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\Microsoft.AI.Web.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\obj\Debug\WebSite.csproj.CoreCompileInputs.cache
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\obj\Debug\WebSite.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\obj\Debug\WebSite.pdb
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference.cache
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\PagedList.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\PagedList.Mvc.dll
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\PagedList.xml
+C:\Users\Ku Rup\Downloads\Compressed\Project B\Project B\WebSite\WebSite\WebSite\bin\PagedList.Mvc.xml
+D:\learn\PJ4\WebSite\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference.cache
+D:\learn\PJ4\WebSite\WebSite\obj\Debug\WebSite.csproj.CoreCompileInputs.cache
+D:\learn\PJ4\WebSite\WebSite\obj\Debug\WebSite.dll
+D:\learn\PJ4\WebSite\WebSite\obj\Debug\WebSite.pdb
+D:\learn\aptech\PJ4\WebSite\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference.cache
+D:\learn\aptech\PJ4\WebSite\WebSite\obj\Debug\WebSite.csproj.CoreCompileInputs.cache
+D:\learn\aptech\PJ4\WebSite\WebSite\obj\Debug\WebSite.dll
+D:\learn\aptech\PJ4\WebSite\WebSite\obj\Debug\WebSite.pdb

@@ -1,0 +1,223 @@
+﻿@model WebSite.Models.Customer
+@using WebSite.Repository
+
+@{
+    IBrandRepository iBrandRepository = new BrandRepository();
+    WebSite.Models.DBWatchEntities db = new WebSite.Models.DBWatchEntities();
+
+}
+@{
+    <script>
+        location.reload();
+        break;
+    </script>
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Leo Shop - Watches Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--Css-->
+    <link href="/Content/App/css/form.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    <link href="/Content/App/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="/Content/App/css/fwslider.css" media="all">
+    <!-- JS -->
+    <script type="text/javascript" src="~/Content/App/js/megamenu.js"></script>
+    <script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/Content/App/js/jquery1.min.js"></script>
+    <script src="/Content/App/js/jquery-ui.min.js"></script>
+    <script src="/Content/App/js/css3-mediaqueries.js"></script>
+    <script src="~/Content/SBAdmin/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="/Content/App/js/fwslider.js"></script>
+    <script src="~/Content/App/js/jquery.easydropdown.js"></script>
+
+    <link href="/Content/App/css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <!--HEADER-->
+    <!--header top-->
+    <div class="header-top">
+        <div class="wrap">
+            <div class="cssmenu">
+                <ul>
+                    @if (Session["userName"] != null)
+                    {
+                        <li class="active"><a href="@Url.Action("ViewDetailsCustomer", "Customers", new {cus= Session["userName"]})">Welcome : @Session["userName"]</a></li>
+                        <li><a href="/Account/Logout"> Logout </a></li>
+                    }
+                    else
+                    {
+
+                        <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                        <li>@Html.ActionLink("Register", "Register", "Account")</li>
+
+                    }
+                </ul>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--/header top-->
+    <!--header bottom-->
+    <div class="header-bottom">
+        <div class="wrap">
+            <div class="header-bottom-left">
+                <div class="logo">
+                    <a href="/"><img src="~/Content/App/images/logo.png" alt="" /></a>
+                </div>
+                <div class="menu">
+                    <ul class="megamenu skyblue">
+                        <li class="active grid">@Html.ActionLink("Home", "HomePage", "Home")</li>
+                        <li>
+                            <a class="color4">Brand</a>
+                            <div class="megapanel">
+                                <div class="row">
+                                    @foreach (var brand in iBrandRepository.findAll())
+                                    {
+                                        <div class="col1">
+                                            <div class="h_nav">
+                                                <ul>
+                                                    <li><h4><a href="@Url.Action("Brand","Product", new { id = brand.BrandID})">@brand.BrandName</a></h4></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </li>
+                        @foreach (var item in db.Categories)
+                        {
+                            <li>
+                                <a class="color5" href="#">@item.CateName</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="header-bottom-right">
+                <div class="search">
+                    <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                    <input type="submit" value="Subscribe" id="submit" name="submit">
+                    <div id="response"> </div>
+                </div>
+                <div class="tag-list">
+                    <ul class="icon1 sub-icon1 profile_img">
+                        <li>
+                            <a class="active-icon c2" href="#"> </a>
+                            <ul class="sub-icon1 list">
+                                <li><h3>No Products</h3><a href=""></a></li>
+                                <li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="last"><li><a href="#">Cart(0)</a></li></ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--/header bottom-->
+    <!--END HEAD-->
+    <div class="container">
+        @RenderBody()
+    </div>
+
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="wrap">
+                <div class="section group example">
+                    <div class="col_1_of_2 span_1_of_2">
+                        <ul class="f-list">
+                            <li><img src="/Content/App/images/2.png"><span class="f-text">Free Shipping on orders over $ 100</span><div class="clear"></div></li>
+                        </ul>
+                    </div>
+                    <div class="col_1_of_2 span_1_of_2">
+                        <ul class="f-list">
+                            <li><img src=""/Content/App/images/3.png"><span class="f-text">Call us! toll free-222-555-6666 </span><div class="clear"></div></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="wrap">
+                <div class="section group example">
+                    <div class="col_1_of_f_1 span_1_of_f_1">
+                        <div class="section group example">
+                            <div class="col_1_of_f_2 span_1_of_f_2">
+                                <h3>Facebook</h3>
+                                <script>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                <div class="like_box">
+                                    <div class="fb-like-box" data-href="" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col_1_of_f_1 span_1_of_f_1">
+                        <div class="section group example">
+                            <div class="col_1_of_f_2 span_1_of_f_2">
+                                <h3>Information</h3>
+                                <ul class="f-list1">
+                                    <li><a href="/">Home page</a></li>
+                                    <li><a href="/Account/Login">Login</a></li>
+                                    <li><a href="/Account/Register">Register</a></li>
+                                    <li><a href="/Home/About">About us</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="col_1_of_f_2 span_1_of_f_2">
+                                <h3>Contact us</h3>
+                                <div class="company_address">
+                                    <p>500 Lê Thị Riêng,</p>
+                                    <p>22-56-2-9 Sit Amet, Lorem,</p>
+                                    <p>Việt Nam</p>
+                                    <p>Phone:(00) 222 666 444</p>
+                                    <p>Fax: (000) 000 00 00 0</p>
+                                    <p>Email: <span>mail[at]leoshop.com</span></p>
+
+                                </div>
+                                <div class="social-media">
+                                    <ul>
+                                        <li> <span class="simptip-position-bottom simptip-movable" data-tooltip="Google"><a href="#" target="_blank"> </a></span></li>
+                                        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Linked in"><a href="#" target="_blank"> </a> </span></li>
+                                        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Rss"><a href="#" target="_blank"> </a></span></li>
+                                        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><a href="#" target="_blank"> </a></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrap">
+                <div class="copy">
+                    <p>© 2018 Template by Leo Shop - Watches Shop</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--END FOOTER-->
+</body>
+</html>

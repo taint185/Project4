@@ -1,0 +1,89 @@
+﻿@model IEnumerable<WebSite.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayOut.cshtml";
+}
+
+<h2>Index</h2>
+
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <!-- Example DataTables Card-->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-table"></i> All Product
+            </div>
+
+            <div class="card-body">
+                <div class="table-responsive">
+                    <div>
+                        <p>
+                            @Html.ActionLink("Create New", "Create")
+                        </p>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Price)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Description)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Origin)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Image)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Brand.BrandName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Category.CateName)
+                        </th>
+                        <th>Action</th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Price)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Description)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Origin)
+                            </td>
+                            <td>
+                                <img style="max-width:50%;" src="@Url.Content("~/Content/App/")images/@item.Image" />
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Brand.BrandName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Category.CateName)
+                            </td>
+                            <td>
+                                <a class="btn btn-success" href="@Url.Action("Edit", "AdminProducts", new { id = item.ProID})">Edit</a><br />
+                                <a class="btn btn-warning" href="@Url.Action("Details", "AdminProducts", new { id = item.ProID})">Details</a><br />
+                                <a class="btn btn-danger" href="@Url.Action("Delete", "AdminProducts", new { id = item.ProID})">Delete</a>
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

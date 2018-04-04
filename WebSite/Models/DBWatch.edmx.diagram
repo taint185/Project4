@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d216c51cb47d4c1f91d22eb3a2e8c1d6" Name="Diagram1">
+        <EntityTypeShape EntityType="DBWatchModel.Admin" Width="1.5" PointX="0.5" PointY="2.5" />
+        <EntityTypeShape EntityType="DBWatchModel.Brand" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="DBWatchModel.Category" Width="1.5" PointX="0.5" PointY="4.375" />
+        <EntityTypeShape EntityType="DBWatchModel.Customer" Width="1.5" PointX="9" PointY="3" />
+        <EntityTypeShape EntityType="DBWatchModel.Order" Width="1.5" PointX="7.5" PointY="0.5" />
+        <EntityTypeShape EntityType="DBWatchModel.OrderDetail" Width="1.5" PointX="5" PointY="0.5" />
+        <EntityTypeShape EntityType="DBWatchModel.Product" Width="1.5" PointX="2.75" PointY="0.5" />
+        <AssociationConnector Association="DBWatchModel.FK_Product_Brand" />
+        <AssociationConnector Association="DBWatchModel.FK_Product_Category" />
+        <AssociationConnector Association="DBWatchModel.FK_Order_Customer" />
+        <AssociationConnector Association="DBWatchModel.FK_OrderDetail_Order" />
+        <AssociationConnector Association="DBWatchModel.FK_OrderDetail_Product" />
+        <EntityTypeShape EntityType="DBWatchModel.FeedBack" Width="1.5" PointX="11.25" PointY="3.375" />
+        <AssociationConnector Association="DBWatchModel.FK__FeedBack__CusNam__4CA06362" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

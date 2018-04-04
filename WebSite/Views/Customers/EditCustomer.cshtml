@@ -1,0 +1,146 @@
+﻿@model WebSite.Models.Customer
+
+@{
+    ViewBag.Title = "EditCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Avatar-->
+<div class="profile-userpic">
+    <img src="~/Content/App/images/customer-512.png" style="width:130px;height:130px;" />
+</div>
+<!--/Avatar-->
+<!--Profile Customer-->
+<div class="row profile" style="font-family:Arial; font-size:1.1em">
+    <div class="col-md-3">
+        <div class="profile-sidebar">
+            <!-- SIDEBAR USER TITLE -->
+            <div class="profile-usertitle">
+                <div class="profile-usertitle-name" style="margin-top:10px;">
+                    <h3>@Session["fullName"]</h3>
+                </div>
+            </div>
+            <div class="profile-usermenu" style="font-size:1.2em;">
+                <ul class="nav">
+                    <li class="active">
+                          <a href="/Customers/ViewDetailsCustomer?cus=@Model.CusName">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("EditCustomer", "Customers",new { cusName = Model.CusName })">
+                            <i class="glyphicon glyphicon-user"></i> Edit Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="glyphicon glyphicon-ok"></i>
+                            Feed Back
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-flag"></i>
+                            Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END MENU -->
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="profile-content">
+            @using (Html.BeginForm("EditCustomer", "Customers", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <!-- Example DataTables Card-->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fa fa-table"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <div class="form-horizontal">
+                                @ViewBag.Message
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @Html.HiddenFor(model => model.CusName)
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new {@type ="Password", @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.FullName, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.BirthDay, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.BirthDay, new { htmlAttributes = new { @type = "Date", @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.BirthDay, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Gender, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Save" class="btn btn-default" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+}
+        </div>
+    </div>
+</div>
+<!--/Profile Customer-->
+<br>
+<br>
+

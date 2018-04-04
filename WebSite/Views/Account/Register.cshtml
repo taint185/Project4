@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model WebSite.Models.Customer
+
+    <div class="register_account">
+        <div class="wrap">
+            <h4 class="title">Create an Account</h4>
+            @if (ViewBag.Message != null)
+            {
+                <div class="form-group">
+                    <div class="col-md-10" style="color:red">@ViewBag.Message</div>
+                </div>
+            }
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+            {
+                <div class="col_1_of_2 span_1_of_2">
+                    <div>
+                        @Html.TextBoxFor(model => model.CusName, new { placeholder = "Customer Name" })            
+                        
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(model => model.Password, new { placeholder = "Password" })
+                        
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(model => model.FullName, new { placeholder = "Full Name" })
+                        
+                    </div>
+                    <div>
+                        @*the input*@
+                        @Html.TextBoxFor(model => model.BirthDay, new { placeholder = "Birthday" })
+                        
+                    </div>
+                </div>
+                <div class="col_1_of_2 span_1_of_2">
+                    <div>
+                        @*select chon*@
+                        @Html.TextBoxFor(model => model.Gender, new { placeholder = "Gender" })
+                    </div>                  
+                    <div>
+                        @Html.TextBoxFor(model => model.Email, new { placeholder = "Email" })
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(model => model.Phone, new { placeholder = "Phone" })
+                    </div>
+                </div>
+                <button class="grey">Submit</button>
+                <div class="clear"></div>                       
+            }
+         </div>
+    </div>

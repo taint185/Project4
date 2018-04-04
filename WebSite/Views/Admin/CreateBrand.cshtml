@@ -1,0 +1,82 @@
+﻿@model WebSite.Models.Brand
+
+@{
+    ViewBag.Title = "CreateBrand";
+    Layout = "~/Views/Shared/_AdminLayOut.cshtml";
+}
+
+<h2>CreateBrand</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <!-- Example DataTables Card-->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <i class="fa fa-table"></i> Create Brand
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <div class="form-horizontal">                          
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.BrandName, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.BrandName, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.BrandName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Create" class="btn btn-default" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container-fluid-->
+        <!-- /.content-wrapper-->
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright © Your Website 2017</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="~/Content/SBAdmin/vendor/jquery/jquery.min.js"></script>
+        <script src="~/Content/SBAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="~/Content/SBAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Page level plugin JavaScript-->
+        <script src="~/Content/SBAdmin/vendor/chart.js/Chart.min.js"></script>
+        <script src="~/Content/SBAdmin/vendor/datatables/jquery.dataTables.js"></script>
+        <script src="~/Content/SBAdmin/vendor/datatables/dataTables.bootstrap4.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="~/Content/SBAdmin/js/sb-admin.min.js"></script>
+        <!-- Custom scripts for this page-->
+        <script src="~/Content/SBAdmin/js/sb-admin-datatables.min.js"></script>
+        <script src="~/Content/SBAdmin/js/sb-admin-charts.min.js"></script>
+    </div>
+
+   
+}
+
+<div>
+    @Html.ActionLink("Back to List", "ViewBrand")
+</div>

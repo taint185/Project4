@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Brand";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h4><a href="@Url.Action("HomePage","Home")">Home</a> &gt; Brand &gt; @ViewBag.brand.BrandName</h4>
+
+
+<div class="main">
+    <div class="wrap">
+        <div class="section group">
+            <div class="cont span_2_of_3">
+                <div class="top-box">
+                    @foreach (var product in ViewBag.products)
+                    {
+                        <div class="section group">
+                            <div class="col_1_of_3 span_1_of_3">
+                                <a href="@Url.Action("Details","Product", new { id = product.ProID })">
+                                    <div class="inner_content clearfix">
+                                        <div class="product_image">
+                                            <img src="@Url.Content("~/Content/App/")images/@product.Image" alt="" width="300" height="180" />
+                                        </div>
+                                        <div class="sale-box"><span class="on_sale title_shop">New</span></div>
+                                        <div class="price">
+                                            <div class="cart-left">
+                                                <p class="title">@product.ProName</p>
+                                                <div class="price1">
+                                                    <span class="actual">@product.Price $</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-right"></div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

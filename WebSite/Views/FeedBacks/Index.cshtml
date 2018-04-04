@@ -1,0 +1,65 @@
+﻿@*@model IEnumerable<WebSite.Models.FeedBack>*@
+@using WebSite.Models
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    DBWatchEntities db = new DBWatchEntities();
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    @*<tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>*@
+
+    @foreach (var item in db.FeedBacks)
+    {
+
+        <tr>
+
+
+            @if (item.Status.ToString().Equals("True"))
+            {
+                <td>
+                    <strong style="font-weight:bold"> @Html.DisplayFor(modelItem => item.Title)</strong>
+
+                </td>
+
+                <td>
+                    <strong style="font-weight:bold">@Html.DisplayFor(modelItem => item.Content).ToString().Substring(0, 10)</strong>
+                </td>
+            }
+            else
+            {
+                <td>
+                 @Html.DisplayFor(modelItem => item.Title)
+
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Content).ToString().Substring(0, 10)
+                </td>
+
+            }
+                <td>
+                    @Html.ActionLink("Read", "Details", new { id = item.FBackID })
+                </td>
+            </tr>
+        }
+
+        </table>

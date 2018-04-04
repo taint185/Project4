@@ -1,0 +1,88 @@
+﻿@model IEnumerable<WebSite.Models.Order>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayOut.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <!-- Example DataTables Card-->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-table"></i> All Orders
+            </div>
+
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Date)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Payment)
+                                </th>
+                                <th>
+                                        @Html.DisplayNameFor(model => model.Customer.FullName)
+                                    </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Customer.CusName)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Date)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Payment)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Customer.FullName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Customer.CusName)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Details", "Details", new { id = item.OrderID })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Your Website 2017</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Content/SBAdmin/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/SBAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="~/Content/SBAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="~/Content/SBAdmin/vendor/chart.js/Chart.min.js"></script>
+    <script src="~/Content/SBAdmin/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="~/Content/SBAdmin/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="~/Content/SBAdmin/js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="~/Content/SBAdmin/js/sb-admin-datatables.min.js"></script>
+    <script src="~/Content/SBAdmin/js/sb-admin-charts.min.js"></script>
+</div>

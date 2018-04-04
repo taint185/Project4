@@ -1,0 +1,68 @@
+﻿@model WebSite.Models.Brand
+
+@{
+    ViewBag.Title = "DetailsBrand";
+    Layout = "~/Views/Shared/_AdminLayOut.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <!-- Example DataTables Card-->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-table"></i> Details Brand
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.BrandName)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.BrandName)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Description)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Description)
+                        </dd>
+
+                    </dl>
+                    <p>
+                        @Html.ActionLink("Edit", "EditBrand", new { id = Model.BrandID }) |
+                        @Html.ActionLink("Back to List", "ViewBrand")
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Your Website 2017</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Content/SBAdmin/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/SBAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="~/Content/SBAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="~/Content/SBAdmin/vendor/chart.js/Chart.min.js"></script>
+    <script src="~/Content/SBAdmin/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="~/Content/SBAdmin/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="~/Content/SBAdmin/js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="~/Content/SBAdmin/js/sb-admin-datatables.min.js"></script>
+    <script src="~/Content/SBAdmin/js/sb-admin-charts.min.js"></script>
+</div>
+

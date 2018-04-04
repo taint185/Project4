@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@using WebSite.Models;
+<!--CSS-->
+
+<link href="~/Content/App/css/style.css" rel="stylesheet" />
+<link href="~/Content/App/css/form.css" rel="stylesheet" />
+<link href="~/Content/App/css/megamenu.css" rel="stylesheet" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+<script src="~/Content/App/js/jquery1.min.js"></script>
+<!-- start menu -->
+<script src="~/Content/App/js/megamenu.js"></script>
+<script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
+<script src="~/Content/App/js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" id="sourcecode">
+    $(function () {
+        $('.scroll-pane').jScrollPane();
+    });
+</script>
+<!-- start details -->
+<script src="js/slides.min.jquery.js"></script>
+<script>
+    $(function () {
+        $('#products').slides({
+            preload: true,
+            preloadImage: 'img/loading.gif',
+            effect: 'slide, fade',
+            crossfade: true,
+            slideSpeed: 350,
+            fadeSpeed: 500,
+            generateNextPrev: true,
+            generatePagination: false
+        });
+    });
+</script>
+<link href="~/Content/App/css/etalage.css" rel="stylesheet" />
+<script src="~/Content/App/js/jquery.etalage.min.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+
+        $('#etalage').etalage({
+            thumb_image_width: 360,
+            thumb_image_height: 360,
+            source_image_width: 900,
+            source_image_height: 900,
+            show_hint: true,
+            click_callback: function (image_anchor, instance_id) {
+                alert('Callback example:\nYou clicked on an image with the anchor: "' + image_anchor + '"\n(in Etalage instance: "' + instance_id + '")');
+            }
+        });
+
+    });
+</script>
+
+<div class="mens">
+    <div class="main">
+        <div class="row">
+            <h3><a class="home" href="@Url.Action("HomePage","Home")">Home</a> > @ViewBag.product.ProName</h3>
+            <div class="col-md-12 span_2_of_3">
+                <div class="col-md-4 images_3_of_2">
+                    <ul id="etalage" class="etalage" style="display: block; width: 362px; height: 486px;">
+                        <li class="etalage_small_thumbs" style="width: 362px; top: 372px;">
+                            <ul style="width: 844px;">
+                                <li class="etalage_smallthumb_navtoend" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -188px;"><img class="etalage_small_thumb" src="@Url.Content("~/Content/App/")images/@ViewBag.product.Image" width="112" style="width: 112px; height: 112px;"></li>
+                                <li class="" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -188px;"><img class="etalage_small_thumb" src="@Url.Content("~/Content/App/")images/@ViewBag.product.Image" width="112" style="width: 112px; height: 112px;"></li>
+                                <li class="etalage_smallthumb_first" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -188px;"><img class="etalage_small_thumb" src="@Url.Content("~/Content/App/")images/@ViewBag.product.Image" width="112" style="width: 112px; height: 112px;"></li>
+                                <li class="etalage_smallthumb_active" style="opacity: 1; margin: 0px 10px 0px 0px; left: -188px;"><img class="etalage_small_thumb" src="@Url.Content("~/Content/App/")images/@ViewBag.product.Image" width="112" style="width: 112px; height: 112px;"></li>
+                                <li class="etalage_smallthumb_last" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -188px;"><img class="etalage_small_thumb" src="@Url.Content("~/Content/App/")images/@ViewBag.product.Image" width="112" style="width: 112px; height: 112px;"></li>
+                                <li class="etalage_smallthumb_navtostart" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -188px;"><img class="etalage_small_thumb" src="@Url.Content("~/Content/App/")images/@ViewBag.product.Image" width="112" style="width: 112px; height: 112px;"></li>
+                            </ul>
+                        </li>
+                        <li class="etalage_thumb thumb_4 etalage_thumb_active" style="background-image: none; display: list-item; opacity: 1;">
+                            <img class="etalage_thumb_image" src="@Url.Content("~/Content/App/")images/@ViewBag.product.Image" style="display: inline; width: 360px; height: 360px; opacity: 1;">
+                        </li>
+                        <li class="etalage_magnifier" style="margin: 0px; padding: 0px; left: 52px; top: 22px; display: none; opacity: 1;">
+                            <div style="margin: 0px; padding: 0px; width: 240px; height: 194px;">
+                                <img src="@Url.Content("~/Content/App/")images/@ViewBag.product.Image" style="margin: 0px; padding: 0px; width: 360px; height: 360px; display: inline; left: -52px; top: -22px;">
+                            </div>
+                        </li>
+                        <li class="etalage_icon" style="display: list-item; top: 238px; left: 20px; opacity: 1;">&nbsp;</li>
+                        <li class="etalage_hint" style="display: none; margin: 0px; top: -15px; right: -15px;">&nbsp;</li>
+                        <li class="etalage_zoom_area" style="margin: 0px; opacity: 0; left: 372px; display: none; background-image: none;">
+                            <div class="etalage_description" style="width: 560px; bottom: 0px; left: 0px; opacity: 0.7; display: none;"></div>
+                            <div style="width: 600px; height: 486px;">
+                                <img class="etalage_zoom_img" src="@Url.Content("~/Content/App/")images/@ViewBag.product.Image" style="width: 900px; height: 900px; left: -128.216px; top: -63.0981px;">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <script type="text/javascript">
+                    $(window).load(function () {
+                        $("#flexiselDemo1").flexisel();
+                        $("#flexiselDemo2").flexisel({
+                            enableResponsiveBreakpoints: true,
+                            responsiveBreakpoints: {
+                                portrait: {
+                                    changePoint: 480,
+                                    visibleItems: 1
+                                },
+                                landscape: {
+                                    changePoint: 640,
+                                    visibleItems: 2
+                                },
+                                tablet: {
+                                    changePoint: 768,
+                                    visibleItems: 3
+                                }
+                            }
+                        });
+
+                        $("#flexiselDemo3").flexisel({
+                            visibleItems: 5,
+                            animationSpeed: 1000,
+                            autoPlay: false,
+                            autoPlaySpeed: 3000,
+                            pauseOnHover: true,
+                            enableResponsiveBreakpoints: true,
+                            responsiveBreakpoints: {
+                                portrait: {
+                                    changePoint: 480,
+                                    visibleItems: 1
+                                },
+                                landscape: {
+                                    changePoint: 640,
+                                    visibleItems: 2
+                                },
+                                tablet: {
+                                    changePoint: 768,
+                                    visibleItems: 3
+                                }
+                            }
+                        });
+
+                    });
+                </script>
+                <script src="~/Content/App/js/jquery.flexisel.js"></script>
+                <div class="col-md-8 span_3_of_2">
+                    <h3 class="m_3">@ViewBag.product.ProName</h3>
+                    <p class="m_5">@ViewBag.product.Price $</p>
+                    <div class="btn_form">
+                        <form>
+                            <a class="btn btn-success" href="@Url.Action("Buy","Order",new { id = ViewBag.product.ProID})">Buy</a>
+                        </form>
+                    </div>
+                    <span class="m_link">Made in @ViewBag.product.Origin</span>
+                    <h3 class="m_3">Product Details</h3>
+                    <p class="m_text2">@ViewBag.product.Description</p>
+                    <p class="m_text2"></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
